@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/drone/drone/server/blobstore"
+	"github.com/voxxit/drone/server/blobstore"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

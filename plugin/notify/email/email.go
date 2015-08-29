@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/drone/config"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 )
 
 const (

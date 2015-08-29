@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/drone/drone/server/datastore"
+	"github.com/voxxit/drone/server/datastore"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

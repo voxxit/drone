@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	"code.google.com/p/go.net/context"
-	"github.com/drone/drone/server/worker"
-	"github.com/drone/drone/server/worker/pool"
+	"github.com/voxxit/drone/server/worker"
+	"github.com/voxxit/drone/server/worker/pool"
 )
 
 // Director manages workloads and delegates to workers.

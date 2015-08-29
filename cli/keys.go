@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 
 	"github.com/codegangsta/cli"
-	"github.com/drone/drone/client"
+	"github.com/voxxit/drone/client"
 )
 
 // NewSetKeyCommand returns the CLI command for "set-key".

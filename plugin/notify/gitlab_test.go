@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/Bugagazavr/go-gitlab-client"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type MockGitlabClient struct {

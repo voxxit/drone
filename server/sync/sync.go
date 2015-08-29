@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"code.google.com/p/go.net/context"
-	"github.com/drone/drone/plugin/remote"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/plugin/remote"
+	"github.com/voxxit/drone/server/datastore"
+	"github.com/voxxit/drone/shared/model"
 )
 
 func SyncUser(ctx context.Context, user *model.User, remote remote.Remote) {

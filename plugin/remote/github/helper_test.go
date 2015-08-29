@@ -3,7 +3,7 @@ package github
 import (
 	"testing"
 
-	"github.com/drone/drone/plugin/remote/github/testdata"
+	"github.com/voxxit/drone/plugin/remote/github/testdata"
 	"github.com/franela/goblin"
 )
 

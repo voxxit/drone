@@ -3,7 +3,7 @@ package notify
 import (
 	"testing"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type MockHipchatClient struct {

@@ -5,8 +5,8 @@ import (
 	"strconv"
 
 	"github.com/Bugagazavr/go-gitlab-client"
-	"github.com/drone/drone/plugin/remote/gitlab"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/plugin/remote/gitlab"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type Gitlab struct {

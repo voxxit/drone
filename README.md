@@ -1,6 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/drone/drone.png?label=ready&title=Ready)](https://waffle.io/drone/drone)
-[![Build Status](http://test.drone.io/api/badge/github.com/drone/drone/status.svg?style=flat)](http://test.drone.io/github.com/drone/drone)
-[![GoDoc](https://godoc.org/github.com/drone/drone?status.svg)](https://godoc.org/github.com/drone/drone)
+[![Build Status](http://test.drone.io/api/badge/github.com/voxxit/drone/status.svg?style=flat)](http://test.drone.io/github.com/voxxit/drone)
+[![GoDoc](https://godoc.org/github.com/voxxit/drone?status.svg)](https://godoc.org/github.com/voxxit/drone)
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/drone/drone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Documentation
@@ -78,7 +78,7 @@ droned --config=/path/to/drone.toml
 The configuration file is in TOML format. If installed using the `drone.deb` file
 will be located in `/etc/drone/drone.toml`.
 
-You can find the current config of the master branch [here](https://github.com/drone/drone/blob/master/packaging/root/etc/drone/drone.toml).
+You can find the current config of the master branch [here](https://github.com/voxxit/drone/blob/master/packaging/root/etc/drone/drone.toml).
 
 ```toml
 
@@ -243,4 +243,4 @@ You will need to include a `.drone.yml` file in the root of your repository in o
 configure a build. I'm still working on updated documentation, so in the meantime please refer
 to the `0.2` README to learn more about the `.drone.yml` format:
 
-https://github.com/drone/drone/blob/v0.2.1/README.md#builds
+https://github.com/voxxit/drone/blob/v0.2.1/README.md#builds

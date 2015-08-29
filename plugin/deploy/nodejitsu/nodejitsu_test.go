@@ -3,7 +3,7 @@ package nodejitsu
 import (
 	"testing"
 
-	"github.com/drone/drone/shared/build/buildfile"
+	"github.com/voxxit/drone/shared/build/buildfile"
 	"github.com/franela/goblin"
 )
 

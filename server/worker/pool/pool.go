@@ -3,7 +3,7 @@ package pool
 import (
 	"sync"
 
-	"github.com/drone/drone/server/worker"
+	"github.com/voxxit/drone/server/worker"
 )
 
 // TODO (bradrydzewski) ability to cancel work.

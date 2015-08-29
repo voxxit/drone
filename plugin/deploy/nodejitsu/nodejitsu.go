@@ -1,8 +1,8 @@
 package nodejitsu
 
 import (
-	"github.com/drone/drone/plugin/condition"
-	"github.com/drone/drone/shared/build/buildfile"
+	"github.com/voxxit/drone/plugin/condition"
+	"github.com/voxxit/drone/shared/build/buildfile"
 )
 
 type Nodejitsu struct {

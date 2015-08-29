@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/drone/drone/shared/build"
-	"github.com/drone/drone/shared/build/docker"
-	"github.com/drone/drone/shared/build/log"
-	"github.com/drone/drone/shared/build/repo"
-	"github.com/drone/drone/shared/build/script"
+	"github.com/voxxit/drone/shared/build"
+	"github.com/voxxit/drone/shared/build/docker"
+	"github.com/voxxit/drone/shared/build/log"
+	"github.com/voxxit/drone/shared/build/repo"
+	"github.com/voxxit/drone/shared/build/script"
 
 	"github.com/codegangsta/cli"
 )

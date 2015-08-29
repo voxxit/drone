@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/drone/config"
-	"github.com/drone/drone/server/middleware"
-	"github.com/drone/drone/server/pubsub"
-	"github.com/drone/drone/server/router"
-	"github.com/drone/drone/shared/build/log"
+	"github.com/voxxit/drone/server/middleware"
+	"github.com/voxxit/drone/server/pubsub"
+	"github.com/voxxit/drone/server/router"
+	"github.com/voxxit/drone/shared/build/log"
 
 	"github.com/GeertJohan/go.rice"
 
@@ -20,17 +20,17 @@ import (
 	webcontext "github.com/goji/context"
 	"github.com/zenazn/goji/web"
 
-	_ "github.com/drone/drone/plugin/notify/email"
-	"github.com/drone/drone/plugin/remote/bitbucket"
-	"github.com/drone/drone/plugin/remote/github"
-	"github.com/drone/drone/plugin/remote/gitlab"
-	"github.com/drone/drone/plugin/remote/gogs"
-	"github.com/drone/drone/server/blobstore"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/server/datastore/database"
-	"github.com/drone/drone/server/worker/director"
-	"github.com/drone/drone/server/worker/docker"
-	"github.com/drone/drone/server/worker/pool"
+	_ "github.com/voxxit/drone/plugin/notify/email"
+	"github.com/voxxit/drone/plugin/remote/bitbucket"
+	"github.com/voxxit/drone/plugin/remote/github"
+	"github.com/voxxit/drone/plugin/remote/gitlab"
+	"github.com/voxxit/drone/plugin/remote/gogs"
+	"github.com/voxxit/drone/server/blobstore"
+	"github.com/voxxit/drone/server/datastore"
+	"github.com/voxxit/drone/server/datastore/database"
+	"github.com/voxxit/drone/server/worker/director"
+	"github.com/voxxit/drone/server/worker/docker"
+	"github.com/voxxit/drone/server/worker/pool"
 )
 
 const (

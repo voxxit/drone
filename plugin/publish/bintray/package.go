@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/drone/drone/shared/build/buildfile"
+	"github.com/voxxit/drone/shared/build/buildfile"
 )
 
 const bintray_endpoint = "https://api.bintray.com/content/%s/%s/%s/%s/%s"

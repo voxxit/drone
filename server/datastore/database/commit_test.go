@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 	"github.com/franela/goblin"
 )
 

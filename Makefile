@@ -15,17 +15,17 @@ test:
 
 test_mysql:
 	mysql -P 3306 --protocol=tcp -u root -e 'create database if not exists test;'
-	TEST_DRIVER="mysql" TEST_DATASOURCE="root@tcp(127.0.0.1:3306)/test" go test -short github.com/drone/drone/server/datastore/database
+	TEST_DRIVER="mysql" TEST_DATASOURCE="root@tcp(127.0.0.1:3306)/test" go test -short github.com/voxxit/drone/server/datastore/database
 	mysql -P 3306 --protocol=tcp -u root -e 'drop database test;'
 
 test_postgres:
-	TEST_DRIVER="postgres" TEST_DATASOURCE="host=127.0.0.1 user=postgres dbname=postgres sslmode=disable" go test -short github.com/drone/drone/server/datastore/database
+	TEST_DRIVER="postgres" TEST_DATASOURCE="host=127.0.0.1 user=postgres dbname=postgres sslmode=disable" go test -short github.com/voxxit/drone/server/datastore/database
 
 build:
 	mkdir -p packaging/output
 	mkdir -p packaging/root/usr/local/bin
-	go build -o packaging/root/usr/local/bin/drone  -ldflags "-X main.revision $(SHA) -X main.version $(VERSION)" github.com/drone/drone/cli
-	go build -o packaging/root/usr/local/bin/droned -ldflags "-X main.revision $(SHA) -X main.version $(VERSION)" github.com/drone/drone/server
+	go build -o packaging/root/usr/local/bin/drone  -ldflags "-X main.revision $(SHA) -X main.version $(VERSION)" github.com/voxxit/drone/cli
+	go build -o packaging/root/usr/local/bin/droned -ldflags "-X main.revision $(SHA) -X main.version $(VERSION)" github.com/voxxit/drone/server
 
 install:
 	install -t /usr/local/bin packaging/root/usr/local/bin/drone
@@ -48,7 +48,7 @@ packages: clean build embed deb rpm
 # embeds content in go source code so that it is compiled
 # and packaged inside the go binary file.
 embed:
-	rice --import-path="github.com/drone/drone/server" append --exec="packaging/root/usr/local/bin/droned"
+	rice --import-path="github.com/voxxit/drone/server" append --exec="packaging/root/usr/local/bin/droned"
 
 # creates a debian package for drone to install
 # `sudo dpkg -i drone.deb`
@@ -61,7 +61,7 @@ deb:
 	 	--after-install packaging/scripts/postinst.deb \
 	 	--before-remove packaging/scripts/prerm.deb \
 		--after-remove packaging/scripts/postrm.deb \
-		--url https://github.com/drone/drone \
+		--url https://github.com/voxxit/drone \
 		--description "Drone continuous integration server" \
 		-m "Brad Rydzewski <brad@drone.io>" \
 		--license "Apache License 2.0" \
@@ -78,7 +78,7 @@ rpm:
 	 	--after-install packaging/scripts/postinst.rpm \
 	 	--before-remove packaging/scripts/prerm.rpm \
 		--after-remove packaging/scripts/postrm.rpm \
-		--url https://github.com/drone/drone \
+		--url https://github.com/voxxit/drone \
 		--description "Drone continuous integration server" \
 		-m "Brad Rydzewski <brad@drone.io>" \
 		--license "Apache License 2.0" \

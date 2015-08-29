@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drone/drone/shared/model"
 	"github.com/gogits/go-gogs-client"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type Gogs struct {

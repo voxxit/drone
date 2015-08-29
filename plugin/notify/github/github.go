@@ -5,7 +5,7 @@ import (
 	"net/url"
 
 	"code.google.com/p/goauth2/oauth"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 	"github.com/google/go-github/github"
 )
 
@@ -140,7 +140,7 @@ func getDesc(status string) string {
 // for the user to click and jump to the build results.
 //
 // for example:
-//   https://drone.io/github.com/drone/drone-test-go/master/c22aec9c53
+//   https://drone.io/github.com/voxxit/drone-test-go/master/c22aec9c53
 func getTarget(url, host, owner, repo, branch, commit string) string {
 	return fmt.Sprintf("%s/%s/%s/%s/%s/%s", url, host, owner, repo, branch, commit)
 }

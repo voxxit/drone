@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type Webhook struct {

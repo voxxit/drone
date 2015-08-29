@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/drone/drone/shared/build/buildfile"
-	"github.com/drone/drone/shared/build/docker"
-	"github.com/drone/drone/shared/build/proxy"
-	"github.com/drone/drone/shared/build/repo"
-	"github.com/drone/drone/shared/build/script"
+	"github.com/voxxit/drone/shared/build/buildfile"
+	"github.com/voxxit/drone/shared/build/docker"
+	"github.com/voxxit/drone/shared/build/proxy"
+	"github.com/voxxit/drone/shared/build/repo"
+	"github.com/voxxit/drone/shared/build/script"
 )
 
 var (
@@ -78,7 +78,7 @@ func TestSetup(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.dockerClient = client
@@ -145,7 +145,7 @@ func TestSetupErrorRunDaemonPorts(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.Build.Services = append(b.Build.Services, "mysql")
@@ -184,7 +184,7 @@ func TestSetupErrorServiceInspect(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.Build.Services = append(b.Build.Services, "mysql")
@@ -212,7 +212,7 @@ func TestSetupErrorImagePull(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.Build.Services = append(b.Build.Services, "mysql")
@@ -236,7 +236,7 @@ func TestSetupErrorUpdate(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "bradrydzewski/go:latest"
 	b.dockerClient = client
@@ -265,7 +265,7 @@ func TestSetupErrorBuild(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.dockerClient = client
@@ -300,7 +300,7 @@ func TestSetupErrorBuildInspect(t *testing.T) {
 
 	b := Builder{}
 	b.Repo = &repo.Repo{}
-	b.Repo.Path = "git://github.com/drone/drone.git"
+	b.Repo.Path = "git://github.com/voxxit/drone.git"
 	b.Build = &script.Build{}
 	b.Build.Image = "go1.2"
 	b.dockerClient = client
@@ -563,11 +563,11 @@ func TestWriteBuildScript(t *testing.T) {
 		Hosts: []string{"127.0.0.1"}}
 	b.Key = []byte("ssh-rsa AAA...")
 	b.Repo = &repo.Repo{
-		Path:   "git://github.com/drone/drone.git",
+		Path:   "git://github.com/voxxit/drone.git",
 		Branch: "master",
 		Commit: "e7e046b35",
 		PR:     "123",
-		Dir:    "/var/cache/drone/github.com/drone/drone"}
+		Dir:    "/var/cache/drone/github.com/voxxit/drone"}
 	b.writeBuildScript(dir)
 
 	// persist a dummy build script to disk
@@ -582,19 +582,19 @@ func TestWriteBuildScript(t *testing.T) {
 	f.WriteEnv("SHELL", "/bin/bash")
 	f.WriteEnv("CI", "true")
 	f.WriteEnv("DRONE", "true")
-	f.WriteEnv("DRONE_REMOTE", "git://github.com/drone/drone.git")
+	f.WriteEnv("DRONE_REMOTE", "git://github.com/voxxit/drone.git")
 	f.WriteEnv("DRONE_BRANCH", "master")
 	f.WriteEnv("DRONE_COMMIT", "e7e046b35")
 	f.WriteEnv("DRONE_PR", "123")
-	f.WriteEnv("DRONE_BUILD_DIR", "/var/cache/drone/github.com/drone/drone")
+	f.WriteEnv("DRONE_BUILD_DIR", "/var/cache/drone/github.com/voxxit/drone")
 	f.WriteEnv("CI_NAME", "DRONE")
 	f.WriteEnv("CI_BUILD_URL", "")
-	f.WriteEnv("CI_REMOTE", "git://github.com/drone/drone.git")
+	f.WriteEnv("CI_REMOTE", "git://github.com/voxxit/drone.git")
 	f.WriteEnv("CI_BRANCH", "master")
 	f.WriteEnv("CI_PULL_REQUEST", "123")
 	f.WriteHost("127.0.0.1")
 	f.WriteFile("$HOME/.ssh/id_rsa", []byte("ssh-rsa AAA..."), 600)
-	f.WriteCmd("git clone --depth=0 --recursive git://github.com/drone/drone.git /var/cache/drone/github.com/drone/drone")
+	f.WriteCmd("git clone --depth=0 --recursive git://github.com/voxxit/drone.git /var/cache/drone/github.com/voxxit/drone")
 	f.WriteCmd("git fetch origin +refs/pull/123/head:refs/remotes/origin/pr/123")
 	f.WriteCmd("git checkout -qf -b pr/123 origin/pr/123")
 

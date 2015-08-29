@@ -7,7 +7,7 @@ import (
 
 type Repo struct {
 	// The name of the Repository. This should be the
-	// canonical name, for example, github.com/drone/drone.
+	// canonical name, for example, github.com/voxxit/drone.
 	Name string
 
 	// The path of the Repoisotry. This could be

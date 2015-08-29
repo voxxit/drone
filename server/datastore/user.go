@@ -2,7 +2,7 @@ package datastore
 
 import (
 	"code.google.com/p/go.net/context"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type Userstore interface {

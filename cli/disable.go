@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/codegangsta/cli"
-	"github.com/drone/drone/client"
+	"github.com/voxxit/drone/client"
 )
 
 // NewDisableCommand returns the CLI command for "disable".

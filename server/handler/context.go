@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 	"github.com/zenazn/goji/web"
 )
 

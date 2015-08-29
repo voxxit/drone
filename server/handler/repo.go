@@ -6,11 +6,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/drone/drone/plugin/remote"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
-	"github.com/drone/drone/shared/sshutil"
+	"github.com/voxxit/drone/plugin/remote"
+	"github.com/voxxit/drone/server/datastore"
+	"github.com/voxxit/drone/shared/httputil"
+	"github.com/voxxit/drone/shared/model"
+	"github.com/voxxit/drone/shared/sshutil"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 	"github.com/russross/meddler"
 )
 

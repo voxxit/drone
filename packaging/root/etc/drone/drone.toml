@@ -1,6 +1,5 @@
-
 [server]
-port=":80"
+port=":8000"
 
 #####################################################################
 # SSL configuration
@@ -15,9 +14,9 @@ port=":80"
 # [server.assets]
 # folder=""
 
-# [session]
-# secret=""
-# expires=""
+[session]
+secret="3a92de0845c67fc54e6243597e11074f8a2ee823"
+expires="72h"
 
 #####################################################################
 # Database configuration, by default using SQLite3.
@@ -26,13 +25,12 @@ port=":80"
 
 [database]
 driver="sqlite3"
-datasource="/var/lib/drone/drone.sqlite"
+datasource="/Users/jdelsman/drone.sqlite"
 
-# [github]
-# client=""
-# secret=""
-# orgs=[]
-# open=false
+[github]
+client="1cb1c3e6333dc82fe4bd"
+secret="3a92de0845c67fc54e6243597e11074f8a2ee823"
+orgs=["hoteltonight"]
 
 # [github_enterprise]
 # client=""

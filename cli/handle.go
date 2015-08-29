@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/drone/drone/client"
+	"github.com/voxxit/drone/client"
 )
 
 type handlerFunc func(*cli.Context, *client.Client) error

@@ -2,7 +2,7 @@ package bitbucket
 
 import (
 	"github.com/drone/config"
-	"github.com/drone/drone/plugin/remote"
+	"github.com/voxxit/drone/plugin/remote"
 )
 
 var (

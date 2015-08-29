@@ -6,13 +6,13 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/drone/drone/plugin/notify/email"
-	"github.com/drone/drone/plugin/notify/flowdock"
-	"github.com/drone/drone/plugin/notify/github"
-	"github.com/drone/drone/plugin/notify/irc"
-	"github.com/drone/drone/plugin/notify/katoim"
-	"github.com/drone/drone/plugin/notify/webhook"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/plugin/notify/email"
+	"github.com/voxxit/drone/plugin/notify/flowdock"
+	"github.com/voxxit/drone/plugin/notify/github"
+	"github.com/voxxit/drone/plugin/notify/irc"
+	"github.com/voxxit/drone/plugin/notify/katoim"
+	"github.com/voxxit/drone/plugin/notify/webhook"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type Sender interface {

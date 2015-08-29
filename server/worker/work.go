@@ -1,6 +1,6 @@
 package worker
 
-import "github.com/drone/drone/shared/model"
+import "github.com/voxxit/drone/shared/model"
 
 type Work struct {
 	Host   string        `json:"host"`

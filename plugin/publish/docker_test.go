@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/drone/drone/shared/build/buildfile"
-	"github.com/drone/drone/shared/build/repo"
+	"github.com/voxxit/drone/shared/build/buildfile"
+	"github.com/voxxit/drone/shared/build/repo"
 	"gopkg.in/yaml.v1"
 )
 

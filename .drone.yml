@@ -1,6 +1,6 @@
 image: go1.3
 git:
-  path: github.com/drone/drone
+  path: github.com/voxxit/drone
 env:
   - GOROOT=/usr/local/go
   - PATH=$PATH:$GOROOT/bin:$GOPATH/bin

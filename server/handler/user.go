@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/drone/drone/plugin/remote"
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/server/sync"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/plugin/remote"
+	"github.com/voxxit/drone/server/datastore"
+	"github.com/voxxit/drone/server/sync"
+	"github.com/voxxit/drone/shared/model"
 	"github.com/goji/context"
 	"github.com/zenazn/goji/web"
 )

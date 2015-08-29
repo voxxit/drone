@@ -5,8 +5,8 @@
 FROM google/golang
 ENV DRONE_SERVER_PORT :80
 
-ADD . /gopath/src/github.com/drone/drone/
-WORKDIR /gopath/src/github.com/drone/drone
+ADD . /gopath/src/github.com/voxxit/drone/
+WORKDIR /gopath/src/github.com/voxxit/drone
 
 RUN apt-get update
 RUN apt-get -y install zip libsqlite3-dev sqlite3 1> /dev/null 2> /dev/null

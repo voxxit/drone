@@ -10,13 +10,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drone/drone/shared/build/buildfile"
-	"github.com/drone/drone/shared/build/docker"
-	"github.com/drone/drone/shared/build/dockerfile"
-	"github.com/drone/drone/shared/build/log"
-	"github.com/drone/drone/shared/build/proxy"
-	"github.com/drone/drone/shared/build/repo"
-	"github.com/drone/drone/shared/build/script"
+	"github.com/voxxit/drone/shared/build/buildfile"
+	"github.com/voxxit/drone/shared/build/docker"
+	"github.com/voxxit/drone/shared/build/dockerfile"
+	"github.com/voxxit/drone/shared/build/log"
+	"github.com/voxxit/drone/shared/build/proxy"
+	"github.com/voxxit/drone/shared/build/repo"
+	"github.com/voxxit/drone/shared/build/script"
 )
 
 // BuildState stores information about a build

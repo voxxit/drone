@@ -3,7 +3,7 @@ package remote
 import (
 	"net/http"
 
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/model"
 )
 
 type Remote interface {

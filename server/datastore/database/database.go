@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"os"
 
-	"github.com/drone/drone/server/datastore"
-	"github.com/drone/drone/server/datastore/migrate"
+	"github.com/voxxit/drone/server/datastore"
+	"github.com/voxxit/drone/server/datastore/migrate"
 
 	"github.com/BurntSushi/migration"
 	_ "github.com/go-sql-driver/mysql"

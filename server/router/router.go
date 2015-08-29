@@ -3,8 +3,8 @@ package router
 import (
 	"regexp"
 
-	"github.com/drone/drone/server/handler"
-	"github.com/drone/drone/server/middleware"
+	"github.com/voxxit/drone/server/handler"
+	"github.com/voxxit/drone/server/middleware"
 
 	"github.com/zenazn/goji/web"
 )

@@ -7,8 +7,8 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/drone/drone/shared/httputil"
-	"github.com/drone/drone/shared/model"
+	"github.com/voxxit/drone/shared/httputil"
+	"github.com/voxxit/drone/shared/model"
 	"github.com/drone/go-bitbucket/bitbucket"
 	"github.com/drone/go-bitbucket/oauth1"
 )
